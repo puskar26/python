@@ -28,3 +28,19 @@ print(np.identity(2))
 b = np.array([[1,2,3]])
 c = np.repeat(b , 2, axis=0)
 print(c)
+
+#Exercise 1
+
+#Practise
+a = np.ones((5,5),dtype=int)
+c=np.zeros((3,3))
+c[1,1] = 9
+print(c)
+
+#Inserting an array into another array
+#a[row:row, column:column]= some array
+a[1:4, 1:4]=c
+print(a)
+
+#copying Array
+b=a.copy()
